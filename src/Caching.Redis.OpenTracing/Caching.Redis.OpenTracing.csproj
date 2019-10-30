@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Jose Carlos Barrales Quirino</Authors>
+    <Description>Redis wrapper that writes to de DiagnosticSource</Description>
+    <PackageProjectUrl>https://github.com/JoseBarrales/Caching.Redis.OpenTracing</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/JoseBarrales/Caching.Redis.OpenTracing</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Redis wrapper that writes to de DiagnosticSource</PackageReleaseNotes>
+    <PackageTags>Redis OpenTracing Diagnostics Listener</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/JoseBarrales/Caching.Redis.OpenTracing/master/assets/opentracing.png</PackageIconUrl>
+    <PackageLicense>https://raw.githubusercontent.com/JoseBarrales/Caching.Redis.OpenTracing/master/LICENSE</PackageLicense>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Copyright>Jose Carlos Barrales Quirino</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="messagepack" Version="1.7.3.7" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.2.0" />
+    <PackageReference Include="microsoft.extensions.caching.memory" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DiagnosticAdapter" Version="3.0.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.AspNetCore" Version="5.2.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="5.2.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.MsgPack" Version="5.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Protobuf" Version="5.2.0" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="4.6.0" />
+  </ItemGroup>
+</Project>
